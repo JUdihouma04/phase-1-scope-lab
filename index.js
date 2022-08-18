@@ -1,7 +1,15 @@
 // Write your solution in this file!
 var customerName = "bob";
 function upperCaseCustomerName() {
-  customerName.toUpperCase();
-  return customerName;
+  window.customerName = window.customerName.toUpperCase();
 }
-upperCaseCustomerName();
+function setBestCustomer() {
+  window.bestCustomer = "not bob";
+}
+function overwriteBestCustomer() {
+  window.bestCustomer = "maybe bob";
+}
+const leastFavoriteCustomer = "junet";
+function changeLeastFavoriteCustomer() {
+  leastFavoriteCustomer = "sankok";
+}
